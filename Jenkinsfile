@@ -13,7 +13,7 @@ pipeline {
             stage('Lint Checks') {
                 steps { 
                     script{
-                        sample.info{"Welocme", "Stockexchange.com"}
+                        sample.info("Welocme", "Stockexchange.com")
                     }
                     sh "echo Installing jslint"
                     sh "npm i jslint"
